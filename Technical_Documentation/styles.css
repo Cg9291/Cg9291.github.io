@@ -1,0 +1,80 @@
+body{  
+  border:blue solid;
+  display:flex;
+  background: url(https://s1.ticketm.net/dam/a/c90/965833d9-2f76-4e79-bd87-f2bc61282c90_1339931_TABLET_LANDSCAPE_LARGE_16_9.jpg);
+}
+@media(max-width:800px){
+  body{
+    flex-direction:row;
+  }
+}
+#navbar{
+  background-color: rgba(200,200,200,0.6);
+  flex:0 0 15rem;
+  display:flex; 
+  flex-direction:column;
+  align-items:flex-start;
+  margin:0;
+  padding:0;  
+  border-right:rgba(0,0,250,1) solid;
+  
+}
+
+#navbar header{
+  font-size:3em;
+  align-self:center;
+  padding:0;
+  margin:1rem;
+}
+
+#navbar ul{  
+  margin:0;
+  padding:0;
+  width:100%;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  font-size:1.3em;
+}
+
+#navbar li{
+  border-top:red solid;
+  padding:1rem;
+  text-align:start;
+}
+
+#navbar a{
+  text-decoration: none;
+  color:black;
+}
+
+#main-doc{
+  align-self:stretch;
+  flex:2 0 40.1rem;
+  margin:0;
+  padding:0;
+  font-size:3vw;
+  }
+
+  header{
+    text-decoration: underline;
+
+  }
+
+  ul{  
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:2em;
+  }
+
+#footer{
+  justify-self:flex-end;
+  align-self:flex-start;
+  margin-top:98vh;
+  border-style:dashed;
+}

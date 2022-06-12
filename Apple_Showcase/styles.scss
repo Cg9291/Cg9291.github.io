@@ -1,16 +1,36 @@
 
-html,body,section,div,nav,p,ul,li,a,img,h2{ 
+html,body,section,div,nav,p,ul,li,a,img,h2,.row{ 
     margin:0;
     padding:0;
+    z-index: 0;
 }
+
 nav{
+    position:fixed;
+    z-index: 1;
     background: #cf3144;
-    min-width: 100vw;;
+    width:100%;
     ul{
         display: flex;
         justify-content: space-evenly;
         list-style:none;
     };
+    li{
+        height: 100%;
+    }
+
+    li:hover{
+        background-color: darkblue;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        
+    }
+     a:hover {
+        color: white;
+        text-decoration: none;
+         }
 }
 
 .bg-black{
@@ -63,7 +83,13 @@ h1{
         margin-top: 50%;
     }  
 }
-
+iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left: -100%;
+}
 #watches{
     min-height:100%;
     img{

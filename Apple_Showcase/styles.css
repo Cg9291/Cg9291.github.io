@@ -1,11 +1,14 @@
-html, body, section, div, nav, p, ul, li, a, img, h2 {
+html, body, section, div, nav, p, ul, li, a, img, h2, .row {
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 
 nav {
+  position: fixed;
+  z-index: 1;
   background: #cf3144;
-  min-width: 100vw;
+  width: 100%;
 }
 
 nav ul {
@@ -16,6 +19,24 @@ nav ul {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   list-style: none;
+}
+
+nav li {
+  height: 100%;
+}
+
+nav li:hover {
+  background-color: darkblue;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 #welcome-section, section {
@@ -69,6 +90,14 @@ h1 {
   color: white;
   font-size: 1.5vw;
   margin-top: 50%;
+}
+
+iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
 }
 
 #watches {

@@ -20,36 +20,48 @@
     <title>Apple Showcase</title>
 </head>
 <body>
-    <nav id="navbar" class="container-fluid row d-flex  ">
-        
-            <div id="time" class="col-3 ">
+    <nav id="navbar">
+        <div class="row">
+            <div id="time"
+            class="col-3 d-flex justify-content-start ">
                 <script src="show_time.js">
                 </script>
             </div>
 
-            <ul class="col-6">
-                <div class="col-2">
-                    <li>Main Products</li>
+            <ul class="col-6 text-responsive">
+                <div class="">
+                    <li><a href="#all-display"> Main Products</a></li>
                 </div>
 
-                <div class="col-2">
-                    <li>Complimentary Products
+                <div class="">
+                    <li><a href="#prod1">Iphone</a>
                     </li>
                 </div>
 
-                <div class="col-2">
-                    <li>Accessories
+                <div class="">
+                    <li><a href="#prod2">Macbook</a>
+                    </li>
+                </div>
+
+                <div class="">
+                    <li><a href="#prod3">Ipad</a>
+                    </li>
+                </div>
+
+                <div class="">
+                    <li><a href="#2prods">Complementary Products</a>
                     </li>
                 </div>
             </ul>
 
-            <div id="date" style="border:white dashed" class="col-3 justify-contents-end">
-                <script class="justify-self-end offset-3"
+            <div id="date"class="col-3 d-flex justify-content-end">
+                <script class=""
                 src="show_date.js">
                 </script>
             </div>
-    
+        </div>
     </nav>
+
     <section id="welcome-section" class="container-fluid bg-black">
         <div class="row" style="max-height:100%">
          <img class="mx-auto" id="hero-img" src="https://www.apple.com/v/home/takeover/c/images/overview/hero/hero__x15fcac9fw2q_large.png">
@@ -66,16 +78,21 @@
         </div>
     </section>
     
-    <section id="prod1" class="d-flex prods">
+    <section id="prod1" class="prods">
         <div class="row no-gutters d-flex">
             <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
            <div class="d-flex flex-column bg-dark col-2">
                <h2>The iPhone 13 Pro Max</h2>
 
                <p class="">It is Apple's biggest source of revenue.</p>
-           
            </div>
         </div>
+        <div class="d-flex justify-content-center">
+        <iframe width="1000" height="500" src="https://www.youtube.com/embed/qDX2_f7KkjU?&autoplay=1&mute=0&playsinline=1&loop=1&controls=0&showinfo=0&modestbranding=1" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        
     </section>
 
     <section id="prod2" class="prods">

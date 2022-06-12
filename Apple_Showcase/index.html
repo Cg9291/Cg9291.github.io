@@ -14,23 +14,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
     <title>Apple Showcase</title>
 </head>
 <body>
-    <nav id="navbar" class="container-fluid">
-        <ul class="row"> 
-            <div class="col-xs-4">
-                <li class="col-xs-4">Main Products</li>
+    <nav id="navbar" class="container-fluid row d-flex  ">
+        
+            <div id="time" class="col-3 ">
+                <script src="show_time.js">
+                </script>
             </div>
 
-            <div class="col-xs-4">
-                <li>Complimentary Products</li>
-            </div>
+            <ul class="col-6">
+                <div class="col-2">
+                    <li>Main Products</li>
+                </div>
 
-            <div class="col-xs-4">
-                <li>Accessories</li>
+                <div class="col-2">
+                    <li>Complimentary Products
+                    </li>
+                </div>
+
+                <div class="col-2">
+                    <li>Accessories
+                    </li>
+                </div>
+            </ul>
+
+            <div id="date" style="border:white dashed" class="col-3 justify-contents-end">
+                <script class="justify-self-end offset-3"
+                src="show_date.js">
+                </script>
             </div>
-        </ul>
+    
     </nav>
     <section id="welcome-section" class="container-fluid bg-black">
         <div class="row" style="max-height:100%">
@@ -39,16 +57,18 @@
         <h1 class="text-center">My Apple Products
         </h1>
     </section>
+    
     <section id="all-display" class="d-flex container-fluid align-items-center ">
         <div class="row" >
-            <img class="col-4  " src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone13-Pro-color-lineup-220308_big_carousel.jpg.slideshow-xlarge.jpg">
+            <img class="col-4 " src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone13-Pro-color-lineup-220308_big_carousel.jpg.slideshow-xlarge.jpg">
             <img class="col-4 card card-body bg-light" src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg">
             <img class="col-4" src="https://photos5.appleinsider.com/gallery/37619-70910-Apple-Event----September-15-51-18-screenshot-xl.jpg">
         </div>
     </section>
-    <section id="prod1" class="d-flex">
+    
+    <section id="prod1" class="d-flex prods">
         <div class="row no-gutters d-flex">
-            <img class="col-10 " src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
+            <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
            <div class="d-flex flex-column bg-dark col-2">
                <h2>The iPhone 13 Pro Max</h2>
 
@@ -57,29 +77,61 @@
            </div>
         </div>
     </section>
-    <section id="prod2" class="d-flex">
+
+    <section id="prod2" class="prods">
         <div class="row no-gutters d-flex">
-            <div class="d-flex flex-column bg-danger col-1">
+            <div class="d-flex flex-column bg-danger col-2">
                 <h2>The Macbook Pro</h2>
-                <p class="">Apple' marquee and world leading laptop.</p>
+                <p>Apple' marquee and world leading laptop.</p>
             </div>
-            <img class="col-10" src="https://www.apple.com/v/home/takeover/c/images/overview/macbook-pro-13/macbookpro13__fh0vfxd99oey_large.jpg">
+            <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/macbook-pro-13/macbookpro13__fh0vfxd99oey_large.jpg">
         </div>
     </section>
+
+    <section id="prod3" class="prods">
+        <div class="row no-gutters d-flex">
+            <img class="col-10 img-responsive"
+            src="https://www.apple.com/v/home/takeover/c/images/overview/ipados-16/ipados__efgf02u69b0i_large.jpg">
+            <div class="d-flex flex-column bg-primary col-2">
+                <h2>The Ipad Air</h2>
+                <p class="text-danger">
+                    <b><u>
+                        **ADD DESCRIPTION
+                    </u></b>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="2prods" class="prods">
+        <div class="row no-gutters d-flex">
+            <img id="right-airpod" class="col-3 img-responsive bg-greyish"
+            src="https://www.apple.com/v/airpods/r/images/overview/airpods_pro_left__bvanpj0ujnf6_large.png">
+
+            <img id="left-airpod" class="col-3 img-responsive bg-greyish" src="https://www.apple.com/v/airpods/r/images/overview/airpods_pro_right__fm0wwisa76em_large.png">
+       
+            <div id="watches" class="col-6 d-flex align-items-center bg-greyish">
+                <img id="watches-img" class="" src="https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg">
+                
+            </div>
+            
+        </div>
+    </section>
+
     <section id="footer">
         This will be hosting the footer elements of the page
     </section>
     <!--<section id="all-display-section" class="container-fluid">
         <div class="row">
             
-                <img class="img-fluid col-6" src="https://www.apple.com/v/home/takeover/c/images/overview/macbook-air/macbookair__fwraic3xooa6_large.jpg">
+                
           
                 <img class="img-fluid col-6" src="https://www.apple.com/v/home/takeover/c/images/overview/macos-ventura/macos__bf5e2n99plhu_large.jpg">
             
                 
         
-        <img src="https://www.apple.com/v/home/takeover/c/images/overview/ipados-16/ipados__efgf02u69b0i_large.jpg">
-        <img src="https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg">
+        
+        
         
         </div>
     </section>-->

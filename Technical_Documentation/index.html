@@ -55,22 +55,23 @@
         <header>
           Section A
         </header>
-        <p>
-          Paragraph #1....
+        <p id="p1">
+          Paragraph #1....<br />
         </p>
-        <p>
+        <p id="p1b">
           Paragraph #1B....
         </p>
-        <p>
-          Paragraph #1C....
+        <p id="p1c">
+          Paragraph #1C....<br />
+          <button id="p1c-b">Click me</button>
         </p>
-        <p>
-          Paragraph #1D....
+        <p id="p1d">
+          Paragraph #1D....<br/>
         </p>
-        <p>
+        <p id="p1e">
           Paragraph #1E....
         </p>
-        <p>
+        <p id="p1f">
           Paragraph #1F....
         </p>
         
@@ -82,7 +83,10 @@
           Section B
         </header>
         <p>
-          Paragraph #2....
+          Paragraph #2....<br/>
+          <script>
+            document.write("Written with document.write method");       
+          </script>
         </p>
         <code>
         </code>
@@ -94,6 +98,11 @@
         <p>
           Paragraph #3....
         </p>
+        <form id="theform">
+          <input placeholder="Type something?" oninput="handleInput()"/>
+          <button>Submit</button><br/>
+          <p id="mirror-input" > </p>
+        </form>
         <code>
         </code>
         <ul>
@@ -125,7 +134,18 @@
         </code>
       </section>
     </main>
-    
+
+    <script>  
+    const fetch = (id) => document.getElementById(id)
+      document.getElementById("p1").innerHTML=fetch("p1").innerHTML+"...here we go ";
+      document.write("wooow bro")
+      document.getElementById("p1b").style.backgroundColor="black"
+      document.getElementById("p1b").style.color = "gold"
+      document.getElementById("p1c-b").onclick=window.alert("stop clicking bro!") 
+      fetch("p1d").innerHTML= fetch("p1d").innerHTML+fetch("p1").innerHTML+",fetched"
+      
+    </script>
+    <script src="myscript.js"></script>
   </body>
   
 </html>

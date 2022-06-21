@@ -51,27 +51,27 @@
     </footer> 
     </nav>
     <main id="main-doc">
-      <section class="main-section" id="Section_A">
+      <section class="main-section" id="Section_A" onmouseover="showBackground()">
         <header>
           Section A
         </header>
         <p id="p1">
           Paragraph #1....<br />
         </p>
-        <p id="p1b">
+        <p id="p1b" onmouseover="showBackground()">
           Paragraph #1B....
         </p>
-        <p id="p1c">
+        <p id="p1c" onmouseover="showBackground()">
           Paragraph #1C....<br />
           <button id="p1c-b">Click me</button>
         </p>
-        <p id="p1d">
+        <p id="p1d" onmouseover="showBackground()">
           Paragraph #1D....<br/>
         </p>
-        <p id="p1e">
+        <p id="p1e" onmouseover="showBackground()">
           Paragraph #1E....
         </p>
-        <p id="p1f">
+        <p id="p1f" onmouseover="showBackground()">
           Paragraph #1F....
         </p>
         
@@ -98,10 +98,11 @@
         <p>
           Paragraph #3....
         </p>
-        <form id="theform">
-          <input placeholder="Type something?" oninput="handleInput()"/>
+        <form id="theform" onsubmit="return validateForm()">
+          <input id="input-box" placeholder="Type something?" oninput="handleInput()" type="number"/>
           <button>Submit</button><br/>
-          <p id="mirror-input" > </p>
+          <input type="file" />
+          <p id="mirror-input" ></p>
         </form>
         <code>
         </code>
@@ -141,9 +142,7 @@
       document.write("wooow bro")
       document.getElementById("p1b").style.backgroundColor="black"
       document.getElementById("p1b").style.color = "gold"
-      document.getElementById("p1c-b").onclick=window.alert("stop clicking bro!") 
       fetch("p1d").innerHTML= fetch("p1d").innerHTML+fetch("p1").innerHTML+",fetched"
-      
     </script>
     <script src="myscript.js"></script>
   </body>

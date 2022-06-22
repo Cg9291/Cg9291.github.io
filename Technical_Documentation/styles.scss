@@ -1,3 +1,8 @@
+html,body,section,form,p,img,header,ul,ol,li,div{
+  margin:0;
+  padding:0;
+}
+
 html{
     width: 100%;
       overflow-x: none;
@@ -66,7 +71,7 @@ html{
   
     header{
       text-decoration: underline;
-  
+      
     }
   
     ul{  
@@ -89,4 +94,20 @@ html{
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color:black;
     opacity: 1; /* Firefox */
+  }
+  
+  #Section_D{
+    display: flex;
+    width:100%;
+
+  }
+
+  #todo-form{
+    flex:0 0 70%;
+  }
+
+  #todo-list{
+    flex:0 0 30%;
+    background-color: white;
+    justify-self: end;
   }

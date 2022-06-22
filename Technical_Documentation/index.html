@@ -51,27 +51,32 @@
     </footer> 
     </nav>
     <main id="main-doc">
-      <section class="main-section" id="Section_A" onmouseover="showBackground()">
+      <div >
+        <div id="test-div"></div>
+        <button onclick="childrenSections()">click me</button>
+        
+      </div>
+      <section class="main-section" id="Section_A">
         <header>
           Section A
         </header>
-        <p id="p1">
+        <p id="p1" onmouseenter="mouseEnter('p1')" onmouseleave="mouseLeave('p1')">
           Paragraph #1....<br />
         </p>
-        <p id="p1b" onmouseover="showBackground()">
+        <p id="p1b" >
           Paragraph #1B....
         </p>
-        <p id="p1c" onmouseover="showBackground()">
+        <p id="p1c" >
           Paragraph #1C....<br />
           <button id="p1c-b">Click me</button>
         </p>
-        <p id="p1d" onmouseover="showBackground()">
+        <p id="p1d" >
           Paragraph #1D....<br/>
         </p>
-        <p id="p1e" onmouseover="showBackground()">
+        <p id="p1e" >
           Paragraph #1E....
         </p>
-        <p id="p1f" onmouseover="showBackground()">
+        <p id="p1f" >
           Paragraph #1F....
         </p>
         
@@ -99,7 +104,7 @@
           Paragraph #3....
         </p>
         <form id="theform" onsubmit="return validateForm()">
-          <input id="input-box" placeholder="Type something?" oninput="handleInput()" type="number"/>
+          <input id="input-box" placeholder="Type something?" oninput="handleInput()"/>
           <button>Submit</button><br/>
           <input type="file" />
           <p id="mirror-input" ></p>
@@ -115,14 +120,22 @@
         </ul>
       </section>
       <section class="main-section" id="Section_D">
-        <header>
-          Section D 
-        </header>
-        <p>
-          Paragraph #4....
-        </p>
-        <code>
-        </code>
+        <div>
+          <header>
+           Section D 
+          </header>
+          <p>
+            Paragraph #4....
+          </p>
+        <div id="todo-form" >
+          <input id="todo-input" placeholder="Enter list item?" />
+          <button type="button" onclick="test()">Add</button>
+        </div>
+      </div>
+      <ul id="todo-list">
+      </ul>
+        <!--<code>
+        </code>-->
       </section>
       <section class="main-section" id="Section_E">
         <header>

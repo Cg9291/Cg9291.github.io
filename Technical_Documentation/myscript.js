@@ -41,29 +41,39 @@ function childrenSections(){
   getEl("test-div").innerHTML=document.body.innerHTML;
 }
 
-/*function addToList(){
-  const items=getEl("todo-input").value;
-  if(getEl("todo-list").innerHTML===""){
-    document.createElement("ul").setAttribute("id","la-liste");
-    let listTitle=document.createTextNode("Your List");
-    let myList=getEl("la-liste");
-    myList.appendChild(listTitle);
-    getEl("todo-list").appendChild(myList);
-  }else{
-    let newItem=document.createElement("li");
-    newItem.innerHTML=items;
-    myList.appendChild(newItem);
+function addToList() {
+  const inputVal=getEl("todo-input").value;
+  if(inputVal=="") {
+    getEl("todo-input").placeholder="You must enter something";
+    getEl("todo-input").style.backgroundColor="yellow";
+  }else if (getEl("todo-list").innerHTML=="") {
+    getEl("todo-list").innerHTML="<ul id='myList'></ul>";
+    getEl("myList").innerHTML+="<li>"+inputVal+"</li>";
+    getEl("todo-input").value=""; 
+    } 
+  else {
+    getEl("myList").innerHTML+="<li>"+inputVal +"</li>"
+    getEl("todo-input").value="";  
   }
   return false;
-}*/
+}
+
+function defaultPlaceholder(){
+  getEl("todo-input").placeholder="Enter list item?";
+  getEl("todo-input").style.backgroundColor="white";
+}
 
 
-function test(){
+
+
+
+/*function test(){
   const inputVal=getEl("todo-input").value;
   const textVal=document.createTextNode(inputVal);
   const listInput=document.createElement("li");
   const listItem=listInput.append(textVal);
-  getEl("todo-list").append(listItem)
+  getEl("todo-list").innerHTML+="<li>"+inputVal +"</li>"
   getEl("todo-input").value="";  
-}
+}*/
+//this function is kept as a reference for when i review dom navigation & appendchild() etc...
 //remember to create to to list with create elem,appenchild...

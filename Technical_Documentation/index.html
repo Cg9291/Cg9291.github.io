@@ -79,7 +79,6 @@
         <p id="p1f" >
           Paragraph #1F....
         </p>
-        
         <code>
         </code>
       </section>
@@ -96,6 +95,7 @@
         <code>
         </code>
       </section>
+
       <section class="main-section" id="Section_C">
         <header>
           Section C     
@@ -127,13 +127,12 @@
           <p>
             Paragraph #4....
           </p>
-        <div id="todo-form" >
-          <input id="todo-input" placeholder="Enter list item?" />
-          <button type="button" onclick="test()">Add</button>
+        <form id="todo-form" >
+          <input id="todo-input" onclick="defaultPlaceholder()" placeholder="Enter list item?"/>
+          <button onclick="return addToList()">Add</button>
+        </form>
         </div>
-      </div>
-      <ul id="todo-list">
-      </ul>
+        <div id="todo-list"></div>
         <!--<code>
         </code>-->
       </section>
@@ -141,7 +140,7 @@
         <header>
           Section E 
         </header>
-        <p>
+        <p id="p5">
           Paragraph #5....
         </p>
         <code>
@@ -157,6 +156,15 @@
       document.getElementById("p1b").style.color = "gold"
       fetch("p1d").innerHTML= fetch("p1d").innerHTML+fetch("p1").innerHTML+",fetched"
     </script>
+
+    <script>
+      const myCollection=document.getElementsByTagName("section");
+
+      document.getElementById("p5").innerHTML="<h1 style='color:green;background-color:rgba(0,0,0,0.7)'>Below is the result of the getElementsByTagName method,called on section elements.</h1>"+myCollection[0].innerHTML;
+
+      document.getElementById("p5").innerHTML+="The length of the collection is "+myCollection.length+" elements.";
+    </script>
+
     <script src="myscript.js"></script>
   </body>
   

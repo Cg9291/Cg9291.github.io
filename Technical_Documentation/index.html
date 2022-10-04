@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width;initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        Technical Documentation#2
+      </header>
+      <ul>
+        <li>
+          <a class="nav-link"
+          href="#Section_A">Section A
+
+          </a>
+        </li>
+        <li>
+          <a class="nav-link"
+          href="#Section_B">Section B
+            
+          </a>
+        </li>
+        <li>
+          <a class="nav-link"
+          href="#Section_C">Section C
+            
+          </a>
+        </li>
+        <li>
+          <a class="nav-link"
+          href="#Section_D">Section D
+            
+          </a>
+        </li>
+        <li>
+          <a class="nav-link"
+          href="#Section_E">Section E
+            
+          </a>
+        </li>
+        <li>
+          <a href="#footer">Footer
+            
+          </a>
+        </li>
+
+          <footer id="footer">
+      This is the end
+    </footer> 
+    </nav>
+    <main id="main-doc">
+      <div >
+        <div id="test-div"></div>
+        <button onclick="childrenSections()">click me</button>
+        
+      </div>
+      <section class="main-section" id="Section_A">
+        <header>
+          Section A
+        </header>
+        <p id="p1" onmouseenter="mouseEnter('p1')" onmouseleave="mouseLeave('p1')">
+          Paragraph #1....<br />
+        </p>
+        <p id="p1b" >
+          Paragraph #1B....
+        </p>
+        <p id="p1c" >
+          Paragraph #1C....<br />
+          <button id="p1c-b">Click me</button>
+        </p>
+        <p id="p1d" >
+          Paragraph #1D....<br/>
+        </p>
+        <p id="p1e" >
+          Paragraph #1E....
+        </p>
+        <p id="p1f" >
+          Paragraph #1F....
+        </p>
+        <code>
+        </code>
+      </section>
+      <section class="main-section" id="Section_B">
+        <header>
+          Section B
+        </header>
+        <p>
+          Paragraph #2....<br/>
+          <script>
+            document.write("Written with document.write method");       
+          </script>
+        </p>
+        <code>
+        </code>
+      </section>
+
+      <section class="main-section" id="Section_C">
+        <header>
+          Section C     
+        </header>
+        <p>
+          Paragraph #3....
+        </p>
+        <form id="theform" onsubmit="return validateForm()">
+          <input id="input-box" placeholder="Type something?" oninput="handleInput()"/>
+          <button>Submit</button><br/>
+          <input type="file" />
+          <p id="mirror-input" ></p>
+        </form>
+        <code>
+        </code>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Section_D">
+        <div>
+          <header>
+           Section D 
+          </header>
+          <p>
+            Paragraph #4....
+          </p>
+        <form id="todo-form" >
+          <input id="todo-input" onclick="defaultPlaceholder()" placeholder="Enter list item?"/>
+          <button onclick="return addToList()">Add</button>
+        </form>
+        </div>
+        <div id="todo-list"></div>
+        <!--<code>
+        </code>-->
+      </section>
+      <section class="main-section" id="Section_E">
+        <header>
+          Section E 
+        </header>
+        <p id="p5">
+          Paragraph #5....
+        </p>
+        <code>
+        </code>
+      </section>
+    </main>
+
+    <script>  
+    const fetch = (id) => document.getElementById(id)
+      document.getElementById("p1").innerHTML=fetch("p1").innerHTML+"...here we go ";
+      document.write("wooow bro")
+      document.getElementById("p1b").style.backgroundColor="black"
+      document.getElementById("p1b").style.color = "gold"
+      fetch("p1d").innerHTML= fetch("p1d").innerHTML+fetch("p1").innerHTML+",fetched"
+    </script>
+
+    <script>
+      const myCollection=document.getElementsByTagName("section");
+
+      document.getElementById("p5").innerHTML="<h1 style='color:green;background-color:rgba(0,0,0,0.7)'>Below is the result of the getElementsByTagName method,called on section elements.</h1>"+myCollection[0].innerHTML;
+
+      document.getElementById("p5").innerHTML+="The length of the collection is "+myCollection.length+" elements.";
+    </script>
+
+    <script src="myscript.js"></script>
+  </body>
+  
+</html>

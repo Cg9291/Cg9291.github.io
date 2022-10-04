@@ -1,0 +1,287 @@
+body{
+  padding:0;
+  margin:0;
+  width:100vw;
+  min-height:100vh;
+  box-sizing:border-box;
+}
+nav{ 
+  display:flex;
+  position: fixed;
+  font-family:Raleway;
+  background-color:#be3144;
+  opacity: 0.95;
+  padding:0;
+  margin:0;
+  width:100%;
+  max-width: 100%;
+  height:5rem;
+  justify-content: space-between;
+}
+
+nav ul{
+  display:flex;
+  flex:0 1 100%;
+  list-style:none;
+  justify-content:space-evenly;
+  align-items: center;
+  padding:0;
+  margin:0;
+  max-width:100%;
+  height: 100%;
+}
+
+#profile{
+  display: flex;
+  flex:0 0 ;
+  padding:0;
+  margin:0;
+  align-items: center;
+  justify-self:center;
+  color:white;
+}
+#profile a{
+  color:black;
+
+}
+
+#profile:hover{
+  transform:scale(2);
+  background-color: rgb(197, 168, 5);
+}
+
+#profile img{
+  justify-self: start;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+}
+#profile img:hover{
+  transform:scale(3)
+}
+
+nav li{
+  display: flex;
+  height:100%;
+  align-self: center;
+}
+nav li a {
+  color:white;
+  text-decoration:none;
+  padding-left:2vw;
+  padding-right:2vw;
+  border-radius:0.15rem;
+  align-self: center; 
+  
+}
+
+nav li a:hover{
+  transform: scale(1.3);
+}
+nav li:hover{
+  background-color:black;
+}
+
+@media(max-width:28rem) {
+  nav ul {
+    flex-direction: column;
+    border: gold solid;
+  }
+
+  nav li {
+    align-self: start;
+  }
+}
+
+
+
+
+#welcome-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:rgb(4, 8, 58);
+  /*background-image: linear-gradient(12deg, #90933d 0%, #6f05d9 100%);*/
+  height:100vh;
+  font-family:Poppins;
+  color:#be3144;
+}
+
+#welcome-text-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+h1{
+  font-size: 5vw;
+}
+h2{
+  color:white;
+  margin-top:-1.5rem;
+  font-size: 3vw;
+}
+
+#projects{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas:
+    "projects-header"
+    "projects-body"
+    "projects-bottom";
+  background-color:#45567d;
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100rem;
+}
+
+header{
+  display: grid;
+  width:fit-content;
+  justify-self: center;
+  align-self: center;
+  height: fit-content;
+  justify-items: center;
+  align-items: center;
+  font-size:2vw;
+  font-family:Poppins;
+  color:#be3144;
+  color:#eeee00;
+  grid-area: projects-header;
+  text-decoration: underline;
+}
+
+header:hover{
+  transform: scale(1.3);
+}
+
+
+.project-tile{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:3rem;
+  background-color:#45567d;
+  padding:0;
+  margin:0;
+  min-width:100%;
+  height:fit-content;
+  /*border-top:gold solid;
+  border-bottom:gold solid;*/
+  grid-area: projects-body;
+}
+
+img{
+  padding:0;
+  margin:0;
+  width:80%;
+  height:auto;
+}
+.project-tile img{
+  box-shadow:0.5rem 0.5rem 1rem black;
+}
+.project-tile img:hover{
+  transform: scale(1.1);
+}
+#project1{
+  display:flex;
+  justify-content: end;
+  grid-area: 1/1/2/2;
+  padding:0;
+  margin:0;
+}
+
+#project2{
+  display:flex;
+  justify-content: start;
+  grid-area: 1/2/2/3;
+  padding:0;
+  margin:0;
+}
+
+#project3{
+  display:flex;
+  justify-content: end;
+  grid-area: 2/1/3/2;
+  padding:0;
+  margin:0;
+}
+
+#project4{
+  display:flex;
+  justify-content: start;
+  grid-area: 2/2/3/3;
+  padding:0;
+  margin:0;
+}
+
+
+bottom{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size:2vw;
+  font-family:Poppins;
+  color:#be3144;
+  color:#e39015;
+  grid-area:projects-bottom;
+}
+
+#contacts{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins; 
+  height:40rem;
+  background-color:#131516 ;
+  color: white;
+}
+
+#invite{
+display: grid;
+grid-template-rows: auto auto;
+font-size: 3vw;
+justify-items: center;
+align-items: center;
+padding:0;
+margin:0;
+}
+
+#invite h2{
+  font-size:2rem;
+  margin:0;
+  margin-top:-1.2rem;
+  font-style: italic;
+  padding:0;
+}
+
+#contacts-links{
+  display: grid;
+  justify-items: center;
+}
+
+#contacts-links ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-family: Poppins;
+  font-size: 1.5rem; 
+  padding:0;
+  margin:3rem 0 0 0;
+}
+
+#contacts-links li{
+  margin: 0 0 0 1rem;;
+}
+
+#contacts-links a{
+  text-decoration: none;
+  text-shadow: 0.12rem 0.12rem red;
+  color:white
+}

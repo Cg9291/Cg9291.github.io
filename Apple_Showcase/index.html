@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--devices-list:Macbook,IpadAir,Iphone13ProMax,AirpodsPro,AppleWatch,ApplePencil,AppleMouse-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    <title>Apple Showcase</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="row">
+            <div id="time"
+            class="col-3 d-flex justify-content-start ">
+                <script src="show_time.js">
+                </script>
+            </div>
+
+            <ul class="col-6 text-responsive">
+                <div class="">
+                    <li><a href="#all-display"> Main Products</a></li>
+                </div>
+
+                <div class="">
+                    <li><a href="#prod1">Iphone</a>
+                    </li>
+                </div>
+
+                <div class="">
+                    <li><a href="#prod2">Macbook</a>
+                    </li>
+                </div>
+
+                <div class="">
+                    <li><a href="#prod3">Ipad</a>
+                    </li>
+                </div>
+
+                <div class="">
+                    <li><a href="#2prods">Complementary Products</a>
+                    </li>
+                </div>
+            </ul>
+
+            <div id="date"class="col-3 d-flex justify-content-end">
+                <script class=""
+                src="show_date.js">
+                </script>
+            </div>
+        </div>
+    </nav>
+
+    <section id="welcome-section" class="container-fluid bg-black">
+        <div class="row">
+         <img class=" col img-responsive" id="hero-img" src="https://www.apple.com/v/home/takeover/c/images/overview/hero/hero__x15fcac9fw2q_large.png">
+        </div>
+        <h1 class="text-center">My Apple Products
+        </h1>
+    </section>
+    
+    <section id="all-display" class="d-flex container-fluid align-items-center ">
+        <div class="row" >
+            <img class="col-4 " src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone13-Pro-color-lineup-220308_big_carousel.jpg.slideshow-xlarge.jpg">
+            <img class="col-4 card card-body bg-light" src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg">
+            <img class="col-4" src="https://photos5.appleinsider.com/gallery/37619-70910-Apple-Event----September-15-51-18-screenshot-xl.jpg">
+        </div>
+    </section>
+    
+    <section id="prod1" class="prods d-flex flex-column">
+        <div class="row no-gutters d-flex">
+            <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
+           <div class="d-flex flex-column bg-dark col-2">
+               <h2>The iPhone 13 Pro Max</h2>
+
+               <p class="">It is Apple's biggest source of revenue.</p>
+           </div>
+        </div>
+        <div id="iphone-video"class="d-flex justify-content-center">
+        <iframe width="1000" height="500"
+        src="https://www.youtube.com/embed/qDX2_f7KkjU?&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>    
+    </section>
+
+    <section id="prod2" class="prods">
+        <div class="row no-gutters d-flex">
+            <div class="d-flex flex-column bg-danger col-2">
+                <h2>The Macbook Pro</h2>
+                <p>Apple' marquee and world leading laptop.</p>
+            </div>
+            <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/macbook-pro-13/macbookpro13__fh0vfxd99oey_large.jpg">
+        </div>
+        <div id="macbook-video" class="d-flex justify-content-center">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/9tobL8U7dQo?start=7&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="prod3" class="prods">
+        <div class="row no-gutters d-flex">
+            <img class="col-10 img-responsive"
+            src="https://www.apple.com/v/home/takeover/c/images/overview/ipados-16/ipados__efgf02u69b0i_large.jpg">
+            <div class="d-flex flex-column bg-primary col-2">
+                <h2>The Ipad Air</h2>
+                <p class="text-danger">
+                    <b><u>
+                        **ADD DESCRIPTION
+                    </u></b>
+                </p>
+            </div>
+        </div>
+        <div id="ipad-video" class="d-flex justify-content-center">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/I-t2mwrYc6s?&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="2prods" class="prods">
+        <div class="row no-gutters d-flex">
+            <img id="right-airpod" class="col-3 img-responsive bg-greyish"
+            src="https://www.apple.com/v/airpods/r/images/overview/airpods_pro_left__bvanpj0ujnf6_large.png">
+
+            <img id="left-airpod" class="col-3 img-responsive bg-greyish" src="https://www.apple.com/v/airpods/r/images/overview/airpods_pro_right__fm0wwisa76em_large.png">  
+
+            <div class="col-6 embed-responsive embed-responsive-16by9 ">
+            <iframe class="sidepic"
+                src="https://www.youtube.com/embed/OCZVRJ5uZxc?&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            
+        </div>
+
+        <div class="row no-gutters d-flex">
+            <div class="col-6 embed-responsive embed-responsive-16by9 ">
+                <iframe class="sidepic"
+                    src="https://www.youtube.com/embed/MMdQ-gWBNZE?&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div id="watches" class="col-6 d-flex align-items-center bg-greyish">
+                <img id="watches-img" class=""
+                    src="https://www.apple.com/v/home/takeover/c/images/overview/watchos-9/watchos__fg9h3oc7tq62_large.jpg">
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        This will be hosting the footer elements of the page
+    </section>
+    <!--<section id="all-display-section" class="container-fluid">
+        <div class="row">
+            
+                
+          
+                <img class="img-fluid col-6" src="https://www.apple.com/v/home/takeover/c/images/overview/macos-ventura/macos__bf5e2n99plhu_large.jpg">
+            
+                
+        
+        
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OCZVRJ5uZxc" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MMdQ-gWBNZE" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        
+        
+        </div>
+    </section>-->
+</body>
+</html>

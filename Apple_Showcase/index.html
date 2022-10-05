@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +17,7 @@
     <title>Apple Showcase</title>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="container-fluid col-12 ">
         <div class="row">
             <div id="time"
             class="col-3 d-flex justify-content-start ">
@@ -54,7 +51,7 @@
                 </div>
             </ul>
 
-            <div id="date"class="col-3 d-flex justify-content-end">
+            <div id="date"class="col-3">
                 <script class=""
                 src="show_date.js">
                 </script>
@@ -62,15 +59,22 @@
         </div>
     </nav>
 
-    <section id="welcome-section" class="container-fluid bg-black">
-        <div class="row">
-         <img class=" col img-responsive" id="hero-img" src="https://www.apple.com/v/home/takeover/c/images/overview/hero/hero__x15fcac9fw2q_large.png">
+    <section id="welcome-section" class="container-fluid bg-black border border-warning">
+        <div class="row h-100 w-100">
+         <img class="col-12 img-fluid  mw-100" id="hero-img" src="https://www.apple.com/v/home/takeover/c/images/overview/hero/hero__x15fcac9fw2q_large.png">
         </div>
-        <h1 class="text-center">My Apple Products
-        </h1>
+        
     </section>
+
+    <div id="placeholder" class="border border-danger h-50">
+dtyy
+    </div>
+
+    <div>
+        <h1 class="text-center col-12 ">My Apple Products</h1>
+    </div>
     
-    <section id="all-display" class="d-flex container-fluid align-items-center ">
+    <section id="all-display" class="d-flex container-fluid align-items-center border border-warning ">
         <div class="row" >
             <img class="col-4 " src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone13-Pro-color-lineup-220308_big_carousel.jpg.slideshow-xlarge.jpg">
             <img class="col-4 card card-body bg-light" src="https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg">
@@ -78,25 +82,27 @@
         </div>
     </section>
     
-    <section id="prod1" class="prods d-flex flex-column">
-        <div class="row no-gutters d-flex">
-            <img class="col-10 img-responsive" src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
+    <section id="prod1" class="container-fluid prods border border-warning m-0 p-0 h-auto">
+        <div class="row no-gutters w-100">
+            <img class="col-10 img-fluid mw-100 h-auto border border-danger m-0 p-0" src="https://www.apple.com/v/home/takeover/c/images/overview/ios-16/ios16__dcfvpgo5ufgy_large.jpg">
            <div class="d-flex flex-column bg-dark col-2">
                <h2>The iPhone 13 Pro Max</h2>
 
                <p class="">It is Apple's biggest source of revenue.</p>
            </div>
         </div>
-        <div id="iphone-video"class="d-flex justify-content-center">
-        <iframe width="1000" height="500"
+
+        <div id="iphone-video"class="row no-gutters d-flex justify-content-center h-100">
+        <iframe class="col-12" width="1000" height="500"
         src="https://www.youtube.com/embed/qDX2_f7KkjU?&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=0&vq=hd1080" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
         </div>    
+   
     </section>
 
-    <section id="prod2" class="prods">
+    <section id="prod2" class="prods container-fluid border border-danger">
         <div class="row no-gutters d-flex">
             <div class="d-flex flex-column bg-danger col-2">
                 <h2>The Macbook Pro</h2>
@@ -111,7 +117,7 @@
         </div>
     </section>
 
-    <section id="prod3" class="prods">
+    <section id="prod3" class="prods container-fluid">
         <div class="row no-gutters d-flex">
             <img class="col-10 img-responsive"
             src="https://www.apple.com/v/home/takeover/c/images/overview/ipados-16/ipados__efgf02u69b0i_large.jpg">
@@ -132,7 +138,7 @@
         </div>
     </section>
 
-    <section id="2prods" class="prods">
+    <section id="2prods" class="prods container-fluid">
         <div class="row no-gutters d-flex">
             <img id="right-airpod" class="col-3 img-responsive bg-greyish"
             src="https://www.apple.com/v/airpods/r/images/overview/airpods_pro_left__bvanpj0ujnf6_large.png">
@@ -166,7 +172,7 @@
         </div>
     </section>
 
-    <section id="footer">
+    <section id="footer" class="container-fluid">
         This will be hosting the footer elements of the page
     </section>
     <!--<section id="all-display-section" class="container-fluid">

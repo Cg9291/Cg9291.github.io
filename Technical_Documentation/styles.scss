@@ -132,3 +132,18 @@ html{
       
     }
   }
+
+  .itc{
+    background-color: lightgray;
+    ul{
+      display:flex;
+      font-size: 2rem;
+      list-style:disc;
+      border:solid green;
+      justify-content: flex-start;
+
+      li{
+        border:solid red
+      }
+    }
+  }

@@ -121,7 +121,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border:solid green;
+    //border:solid green;
     font-size: 2rem;
     list-style: inside;
     overflow-y: scroll;
@@ -143,7 +143,8 @@ html{
       justify-content: flex-start;
 
       li{
-        border:solid red
+        border:solid red;
+        justify-self: flex-start;
       }
     }
   }

@@ -58,9 +58,11 @@
       </div>
     -->
       <section class="main-section" id="Installation">
-        <h2>
-          Installation
-        </h2>
+        <header>
+          <h2>
+            Installation
+          </h2>
+        </header>
         <p id="p1" onmouseenter="mouseEnter('p1')" onmouseleave="mouseLeave('p1')">
           React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.
         </p>
@@ -77,7 +79,17 @@
         <h3>
           Try React
         </h3>
-        You don’t need to install anything to play with React. Try editing this sandbox!
+        You don't need to install anything to play with React. Try editing this sandbox!
+
+        <code>
+          function Greeting({ name }) {
+          return <h1>Hello, {name}</h1>;
+        }
+        
+        export default function App() {
+          return<Greeting name="world" />
+        }
+      </code>
         <p id="p1b" >
           Paragraph #1B....
         </p>

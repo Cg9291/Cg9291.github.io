@@ -13,7 +13,8 @@ html{
     overflow-x: none;
     border:blue solid;
     display:flex;
-    background: url(https://s1.ticketm.net/dam/a/c90/965833d9-2f76-4e79-bd87-f2bc61282c90_1339931_TABLET_LANDSCAPE_LARGE_16_9.jpg);
+    background-color: rgba($color: #ff0000, $alpha: 0.7)
+    /*background: url(https://s1.ticketm.net/dam/a/c90/965833d9-2f76-4e79-bd87-f2bc61282c90_1339931_TABLET_LANDSCAPE_LARGE_16_9.jpg);*/
   }
   @media(max-width:800px){
     body{
@@ -139,7 +140,7 @@ html{
       display:flex;
       font-size: 2rem;
       list-style:disc;
-      border:solid green;
+      //border:solid green;
       justify-content: flex-start;
 
       li{
@@ -147,4 +148,9 @@ html{
         justify-self: flex-start;
       }
     }
+  }
+
+  .background-sections{
+    border-radius: 0.5rem;
+    padding: 1rem;
   }

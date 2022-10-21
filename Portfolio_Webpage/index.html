@@ -5,36 +5,36 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- https://htmlpreview.github.io/? -->
   </head>
   <body>
-    <div id="page-top"></div>
     <!--STARTS NAV SECTION-->
     <nav id="navbar">
       <ul>
-        <li>
-          <a href="#page-top">
+        <li style="border:solid green">
+          <a href="#page-top" class="nav-text">
             Page Top
           </a>
         </li>
         <li>
-          <a href="#projects">
+          <a href="#projects" class="nav-text">
             Project Tiles
           </a>
         </li>
         <li>
-          <a href="#show-more">
+          <a href="#show-more" class="nav-text">
             Show More
           </a>
         </li>
         <li>
-          <a href="#contacts">
+          <a href="#contacts" class="nav-text">
             Contacts
           </a>
         </li>
         </ul>
         <div id="profile">
-          <a href="https://github.com" target="_blank">          
+          <a class="nav-text" href="https://github.com" target="_blank">          
             Profile 
           </a>  
           <a href="https://github.com">
@@ -48,25 +48,26 @@
     <!--STARTS WELCOME SECTION-->
     <div id="welcome-section">
       <div id="welcome-text-container">
-      <h1> Welcome to Cg's portfolio</h1>
-      <h2>This is the programmer's first step</h2>
+      <h1> Welcome to Carl's portfolio</h1>
+      <h2>The everlearning programmer</h2>
     </div>  
     </div>
     <!--ENDS WELCOME SECTION-->
+    
     <!--STARTS PROJECTS SECTION-->
     <section id="projects">
       <header>My Projects</header>
       <div class="project-tile">
-        <a id="project1" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+        <a class="projects" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"   rel="guys standing">
          </a>
-        <a id="project2" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Tribute%20Page/Tribute%20Page.html "target="_blank">
+        <a class="projects" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Tribute%20Page/Tribute%20Page.html "target="_blank">
           <img src="https://k9f7a9j9.rocketcdn.me/wp-content/uploads/2020/06/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg" rel="other stuff">
         </a>
-        <a id="project3" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Product%20Landing%20Page/Product%20Landing%20Page.html" target="_blank">
+        <a class="projects" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Product%20Landing%20Page/Product%20Landing%20Page.html" target="_blank">
           <img src="https://i.ytimg.com/vi/kV__iZuxDGE/maxresdefault.jpg" rel="guys standing">
         </a>
-        <a id="project4" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html" target="_blank">
+        <a class="projects" href="https://htmlpreview.github.io/?https://github.com/Cg9291/FCC-Projects/blob/main/Technical%20Documentation%20Page/Technical%20Documentation%20Page.html" target="_blank">
           <img src="https://s1.ticketm.net/dam/a/c90/965833d9-2f76-4e79-bd87-f2bc61282c90_1339931_TABLET_LANDSCAPE_LARGE_16_9.jpg" rel="guys standing">
         </a>
         <a id="" href="" target="_blank">
@@ -86,18 +87,33 @@
     <!--STARTS CONTACTS SECTION-->
     <section id="contacts">
       <div id="invite">
-      Wanna work together?
-      <h2>Show us what you got!</h2>
+      Want to work together?
+      <h2>Feel free to reach out</h2>
       <div id="contacts-links">
         <ul>
           <li>
-            <a href="https://github.com" target="_blank">Github</a>
+            <a id="profile-link" href="https://github.com" target="_blank">
+              <i class="fab fa-github"></i> 
+              <text class="styled-text">
+                Github
+              </text>
+            </a>
           </li>
-        <li>
-            <a href="mailto:example@example.com">E-mail</a>
+        <li>  
+            <a href="mailto:example@example.com">
+              <i class="fab fa-twitter"></i>
+              <text class="styled-text">
+                E-mail
+              </text>
+            </a>
         </li>
         <li>
-          <a href="tel:555-555-5555">Phone</a>
+          <a href="tel:555-555-5555">
+            <i class="fas fa-mobile-alt"></i>
+            <text class="styled-text">
+              Phone
+            </text>
+          </a>
         </li>
         <li>
 
@@ -109,6 +125,10 @@
       </div>
       </div>
     </section>
+    <footer>
+
+    </footer>
     <!--ENDS BODY ELEMENT-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>  
 </html>

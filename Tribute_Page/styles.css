@@ -11,18 +11,42 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+hr{
+  width:99.9%;
+  margin-top: 0rem;
+  color: rgba(0, 0, 0, 1);
+}
+
+
 #main{
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  border-radius: 0.3%;
   padding: 0;
-  margin: 1rem 0 1rem 0;
+  margin: 0;
   background-color: white;
-  width: 99%;
+  width: 100%;
+}
 
+#landing-area{
+  height:100vh;
+  width:100%;
+  background-color:black;
+  border-bottom:0.1rem solid rgba(255, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
+}
+
+#container1{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding: 0 0 1.5rem 0;
 }
 
 #title{
@@ -30,20 +54,21 @@ body{
   align-self: center;
   justify-self: flex-start;
   font-size: 5rem;
-  margin-bottom: 0;
+  margin: 0 0 -1rem 0;
 }
 #img-div{
- 
   background-color: black;
+  min-height: 100vh;
   height:100vh;
   width: 100%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: larger;
+  font-size: 1.8rem;
   color: white;
   padding-bottom: 1rem;
+  border-bottom:0.1rem solid rgba(255, 0, 0, 0.65);
 
 }
 #image{
@@ -52,8 +77,9 @@ body{
   margin-bottom: 1rem;
   width: 70%;
   max-width:100%;
-  max-height: min-content;
-  height:70%;
+  max-height: 70%;
+  height:auto;
+  border: 0.1rem solid white;
 }
 
 #tribute-info{
@@ -65,6 +91,17 @@ body{
   border: 0.1rem solid rgba(255, 0, 0, 0.65);
   border-bottom: none;
  
+}
+
+footer{
+  margin:1.5rem;
+  padding: 0 0 0 0;
+}
+
+#tribute-link{
+  margin:1.5rem;
+  padding:0;
+  font-size: 1.3rem;
 }
 
 .side-pics{

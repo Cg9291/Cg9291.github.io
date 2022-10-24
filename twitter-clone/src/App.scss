@@ -6,8 +6,10 @@ section,div,p,img,ul,ol,li{
 #App {
   display: flex;
   height:100vh;
+  max-height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   background-color: white;
   align-items: center;
   font-size: calc(10px + 2vmin);
@@ -25,26 +27,34 @@ section,div,p,img,ul,ol,li{
     font-family: 'Arimo', sans-serif;
     font-size:1.3rem;
     nav{
+      //border:solid green;
       display: flex;
       flex-direction: column;
       align-items: start;
       width: 43.5%; 
+      max-width: 43.5%;
+      height:60%;
+      max-height: 100vh;
       text-decoration: none;
+      .nav-list-items{
+        margin-bottom: 0.5rem;
+      }
       ul{
         list-style: none;
         //list-style-image:url("birdhouse.png");
-        img{
+        .timeline-icons{
           width: 1.5rem;
           height: 2rem;
           margin-bottom: 1rem;
         }
         #twitter-logo{
           width:4rem;
+          height:2.1rem;
           border-radius: 75%;
-          margin-left: -1.2rem;
-          margin-top:0.5rem;
-          margin-bottom: 1.66rem;
-          
+          margin-left:-1.7rem;
+          margin-top:0.9rem;
+          margin-bottom: 0.9rem;
+          padding:0;
         }
         a{
           text-decoration: none;
@@ -61,18 +71,23 @@ section,div,p,img,ul,ol,li{
             padding: 1rem 1.5rem 1rem 1.5rem;
           }
         }
+        .tweet-btn{
+          margin-top: 1.3rem;
+          height: 3.62rem;
+        }
         
         button{
-          align-self:start;
+          //align-self:start;
           font-weight: bold;
           font-size: 1.1rem;
           border-radius:3rem;
-          width:14rem;
-          height:3.3rem;
+          max-width: 100%;
+          width:100%;
+          height:auto;
           color:white;
           background-color: #1d9bf0;
           border: none;
-          margin-top: 1.5rem;
+          //margin-top: 1.5rem;
         }
         button:hover{
           background-color: #1d8ad3;

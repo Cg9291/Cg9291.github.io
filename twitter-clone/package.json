@@ -1,22 +1,13 @@
 {
-<<<<<<< HEAD
   "name": "twitter-clone",
   "version": "0.1.0",
   "private": true,
   "homepage": "/twitter-clone/build/index.html",
-=======
-  "name": "another",
-  "version": "0.1.0",
-  "private": true,
->>>>>>> parent of 4c86f75 (Merge remote-tracking branch 'refs/remotes/origin/master')
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "gh-pages": "^4.0.0",
-=======
->>>>>>> parent of 4c86f75 (Merge remote-tracking branch 'refs/remotes/origin/master')
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -25,11 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-=======
->>>>>>> parent of 4c86f75 (Merge remote-tracking branch 'refs/remotes/origin/master')
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -25,7 +25,7 @@ export default function Timeline(props){
           </ul>
           <button>Tweet</button>
         </div>
-        <a id="timeline"class="twitter-timeline" href="https://twitter.com/TheSportsMediaC/lists/1543020161199812608?ref_src=twsrc%5Etfw" data-chrome="noheader" sourceType="list"
+        <a id="timeline" class="twitter-timeline" href="https://twitter.com/TheSportsMediaC/lists/1543020161199812608?ref_src=twsrc%5Etfw" data-chrome="noheader" sourceType="list"
       ownerScreenName= "TwitterDev"
       slug= "national-parks">A Twitter List by TheSportsMediaC</a> 
         <Helmet>

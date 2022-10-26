@@ -23,9 +23,9 @@ section,div,p,img,ul,ol,li{
     justify-content: space-between;
     align-items: end;
     border-right:0.05rem solid rgba(220,220,220,0.3);
-    flex:0 0 30.6%;
+    flex:0 0 30.3%;
     font-family: 'Arimo', sans-serif;
-    font-size:1.3rem;
+    font-size:1.2rem;
     nav{
       //border:solid green;
       display: flex;
@@ -37,9 +37,13 @@ section,div,p,img,ul,ol,li{
       max-height: 100vh;
       text-decoration: none;
       .nav-list-items{
-        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        //margin-bottom: 0.5rem;
       }
       ul{
+        border:solid yellow;
         list-style: none;
         //list-style-image:url("birdhouse.png");
         .timeline-icons{
@@ -48,27 +52,35 @@ section,div,p,img,ul,ol,li{
           margin-bottom: 1rem;
         }
         #twitter-logo{
-          width:4rem;
-          height:2.1rem;
+          width:3.55rem;
+          height:1.857rem;
           border-radius: 75%;
-          margin-left:-1.7rem;
-          margin-top:0.9rem;
+          margin-left:-1.28rem;
+          margin-top:0.8rem;
           margin-bottom: 0.9rem;
           padding:0;
         }
         a{
           text-decoration: none;
           color: initial;
+          height: 0.5rem;
+          margin-bottom:5rem;
+          
           li{
+            display: flex;
+            justify-content: left;
+            align-items: center;
             margin-bottom: 0rem;
-            padding: 1rem 1.5rem 1rem 1.5rem;
+            padding: 0.8rem 1.5rem 0.8rem 0rem;
             
+            
+            border:dashed pink;
           }
           li:hover{
             background-color: rgba(220,220,220,0.6);
             border-radius: 2rem;
             width: max-content;
-            padding: 1rem 1.5rem 1rem 1.5rem;
+           
           }
         }
         .tweet-btn{
@@ -200,6 +212,9 @@ section,div,p,img,ul,ol,li{
     }
   };
 
+  .twitter-timeline{
+    background-color: red;
+  }
   #middle-container::-webkit-scrollbar{
     display: none;}
 
@@ -315,7 +330,11 @@ section,div,p,img,ul,ol,li{
 }
 
 
-
+svg{
+ // border:solid blue;
+  margin-left: -0.5rem;
+  align-self: center;
+}
 
 
 

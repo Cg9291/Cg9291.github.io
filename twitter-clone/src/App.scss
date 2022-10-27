@@ -31,15 +31,27 @@ section,div,p,img,ul,ol,li{
       display: flex;
       flex-direction: column;
       align-items: start;
-      width: 46%; 
+      width: 47%; 
       max-width: 100%;
       height:60%;
       max-height: 100vh;
       text-decoration: none;
+      #twitter-logo{
+        margin-bottom: -0.5rem;
+        border-radius: 50%;
+        padding:0.2rem 0.2rem 0.2rem 0.2rem;
+        border:solid brown;
+      }
+      #twitter-logo:hover{
+        margin-bottom: -0.5rem;
+        border-radius: 50%;
+        padding:0.2rem 0.2rem 0.2rem 0.2rem;
+        background-color: red;
+      }
       .nav-list-icons{
         //border:solid blue;
-        margin-left: -0.4rem;
-        width: 1.8rem;
+        margin:-0.05rem 0 0 0.8rem;
+        width: 1.85rem;
         height:2rem;
         //align-self: center;
       }
@@ -60,19 +72,17 @@ section,div,p,img,ul,ol,li{
           margin-bottom:5rem;
           
           li{
-            display: flex;
-            justify-content: start;
-            align-items: center;
+            margin-left:0;
             margin-bottom: 0rem;
             padding: 0.8rem 1.5rem 0.8rem 0rem;
             
             
             //border:dashed pink;
           }
-          li:hover{
+          .nav-list-items:hover{
             background-color: rgba(220,220,220,0.6);
             border-radius: 2rem;
-            //width: fit-content;
+            width: max-content;
            
           }
         }

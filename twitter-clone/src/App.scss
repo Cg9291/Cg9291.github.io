@@ -49,7 +49,7 @@ section,div,p,img,ul,ol,li{
       }
       .nav-list-icons{
         //border:solid blue;
-        margin:-0.05rem 0 0 0.8rem;
+        //margin:0 0 0 0.8rem;
         width: 1.85rem;
         height:2rem;
         //align-self: center;
@@ -70,14 +70,22 @@ section,div,p,img,ul,ol,li{
           height: 0.5rem;
           margin-bottom:5rem;
           
-          li{
+          .nav-list-items{
+            display: flex;
+            align-items: center;
             margin-left:0;
             margin-bottom: 0rem;
             padding: 0.8rem 1.5rem 0.8rem 0rem;
+            //border:solid blue;
             
-            
+            .nav-text{
+              margin-left: 1rem;
+              //border:dashed greenyellow;
+            }
             //border:dashed pink;
           }
+
+
           .nav-list-items:hover{
             background-color: rgba(220,220,220,0.6);
             border-radius: 2rem;

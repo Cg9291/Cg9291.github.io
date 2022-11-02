@@ -9,11 +9,13 @@ export default function Profile(props){
       <div id="profile-pill-container">
         <div id="profile-pill">
           <img src="https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png?w=640"/>
-          <div id="username">
-            {userName.userName}<br/>
+          <div id="user-profile">
+            <b>{userName.userName}</b><br/>
             {userName.userHandle}
           </div>
-          <div><strong>...</strong></div>
+          <div id="ellipsis">
+            <strong>...</strong>
+          </div>
         </div>
       </div>
     )

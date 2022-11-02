@@ -43,6 +43,7 @@ section,div,p,img,ul,ol,li{
         margin-left:0.1rem;
         margin-bottom: 0rem;
         padding: 0.8rem 1.5rem 0.8rem 0.7rem;
+        border-radius: 2rem;
         //border:solid blue;
         .nav-text{
           margin-left: 1rem;
@@ -52,21 +53,21 @@ section,div,p,img,ul,ol,li{
       }
       .nav-list-items:hover{
         background-color: rgba(220,220,220,0.6);
-        border-radius: 2rem;
+       
         width: max-content;         
       }
 
       #nav-twitter-logo{
+        margin-top: 0.1rem;
         //margin-bottom: -0.5rem;
         border-radius: 50%;
-        padding:0.2rem 0.2rem 0.2rem 0.2rem;
+        padding:0.8rem 0.7rem 0.8rem 0.7rem;
         //border:solid brown;
       }
       #nav-twitter-logo:hover{
-        margin-bottom: -0.5rem;
         border-radius: 50%;
         background-color: yellow;
-        //padding:0.2rem 0.2rem 0.2rem 0.2rem;
+        
       }
       .nav-list-icons{
         //border:solid blue;
@@ -117,29 +118,42 @@ section,div,p,img,ul,ol,li{
       //must add hover effect
     }
     #profile-pill-container{
-      width: 45%;
+      width: 46.5%;
       display: flex;
       justify-content: start;
-      padding-bottom: 1rem;
+      align-items: flex-end;
+      padding-bottom: 0.75rem;
       margin-right: 0.1rem;
+      //border:solid olive;
     }
     #profile-pill{
       display: flex;
-      justify-content:space-between;
+      //justify-content:space-between;
       align-items: center;
-      justify-self: start;
-      
-      padding:0.5rem 1rem 0.5rem 1rem;
-      width: 12rem;
-      height: 3.6rem;
+      margin-left: 0;
+      //margin-bottom:5;
+      padding:0.5rem 1rem 0.5rem 0.8rem;
+      width: 84%;
+      height: 85%;
       border-radius: 3.6rem;
-      font-size: 1rem;
+      font-size: 0.95rem;
       overflow: hidden;
+      //border:solid green;
       img{
-        width:3rem;  
-        height:3rem;
+        margin-left: 0;
+        width:2.5rem;  
+        height:2.5rem;
         border-radius: 50%;
+      };
+      #user-profile{
+        margin-left: 0.75rem;
+       // border: solid #1d8ad3;
       }
+      #ellipsis{
+        margin-left:2rem ;
+        //border: solid yellow;
+      }
+      
     }
     #profile-pill:hover{
       background-color: rgba(220,220,220,255);

@@ -41,7 +41,7 @@ section,div,p,img,ul,ol,li{
         display: flex;
         align-items: center;
         margin-left:0.1rem;
-        margin-bottom: 0rem;
+        margin-bottom: 0.5rem;
         padding: 0.8rem 1.5rem 0.8rem 0.7rem;
         border-radius: 2rem;
         //border:solid blue;
@@ -66,7 +66,7 @@ section,div,p,img,ul,ol,li{
       }
       #nav-twitter-logo:hover{
         border-radius: 50%;
-        background-color: yellow;
+        background-color: rgba($color: #88bEFF, $alpha:0.2);
         
       }
       .nav-list-icons{
@@ -180,6 +180,7 @@ section,div,p,img,ul,ol,li{
       #tweet-area{
         display: flex;
         justify-content: space-between;
+        align-content: center;
        
         img{
           width:3rem;  
@@ -193,11 +194,12 @@ section,div,p,img,ul,ol,li{
           width: 87%;
           height:5rem;
           border: none;
+          padding: 0;
           
         }
         ::placeholder{
-          font-size: 1.23rem;
-          
+          font-size: 1.27rem;
+          transform: scale(1,1);
           color: black;
           opacity: 0.7;
         }

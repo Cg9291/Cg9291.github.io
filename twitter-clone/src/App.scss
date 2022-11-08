@@ -171,6 +171,7 @@ section,div,p,img,ul,ol,li{
       height: 100vh; 
       #mid-header{
         display: flex;
+        justify-content: space-between;
         align-items: center;
         font-size:1.2rem;
         font-weight: bold;

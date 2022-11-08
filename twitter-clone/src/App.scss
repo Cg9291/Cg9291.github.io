@@ -211,16 +211,16 @@ section,div,p,img,ul,ol,li{
         padding:0 0 1rem 5rem;
         display: flex;
         justify-content: space-between;
-        border-bottom: 0.05rem solid rgba(220,220,220,0.3);
-        
+        border-bottom: 0.05rem solid rgba(220,220,220,0.3); 
         ul{
+          list-style: none;
           display: flex;
-          li{
+          .icons-row-icons{
             list-style: none;
             margin:0 1rem 0 0;
-            img{
-              transform: scale(1.05);
-            }
+            width: 1.2rem;
+            height: 1.2rem;
+            
           }
         }
         button{

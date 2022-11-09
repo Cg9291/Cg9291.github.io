@@ -6,6 +6,7 @@ export default function TrendingSection(){
         <div class="cards">NEWS #2</div>
         <div class="cards">NEWS #3</div>
         <div class="cards">NEWS #4</div>
+        <div class="cards">NEWS #5</div>
         <div class="cards-footer"><a href='#'>Show more</a></div>
       </section>
     )

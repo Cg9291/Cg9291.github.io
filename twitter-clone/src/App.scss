@@ -23,9 +23,9 @@ section,div,p,img,ul,ol,li{
     justify-content: space-between;
     align-items: end;
     border-right:0.05rem solid rgba(220,220,220,0.3);
-    flex:0 0 30.3%;
-    font-family: 'Arimo', sans-serif;
-    font-size:1.2rem;
+    flex:0 0 29.2%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.25rem;
     nav{
       //border:solid green;
       display: flex;
@@ -40,14 +40,16 @@ section,div,p,img,ul,ol,li{
       .nav-list-items{
         display: flex;
         align-items: center;
-        margin-left:0.1rem;
-        margin-bottom: 0.5rem;
-        height: 1.53rem;
-        padding: 0.8rem 1.5rem 0.8rem 0.7rem;
+        margin-left:0.75rem;
+        margin-bottom: 0.55rem;
+        /*height: 1.48rem;
+        min-height: 1.48rem;  
+        max-height: 1.48rem;*/
+        padding: 0.8rem 1.5rem 0.8rem 0.75rem;
         border-radius: 2rem;
         //border:solid blue;
         .nav-text{
-          margin-left: 1rem;
+          margin-left: 1.2rem;
           //border:dashed greenyellow;
         }
         //border:dashed pink;
@@ -58,24 +60,33 @@ section,div,p,img,ul,ol,li{
         width: max-content;         
       }
 
-      #nav-twitter-logo{
-        height:1.7rem;
-        margin-top: 0.14rem;
-        //margin-bottom: -0.5rem;
-        border-radius: 50%;
-        padding:0.7rem 0.7rem 0.86rem 0.6rem;
-        //border:solid brown;
+      #nav-twitter-logo-item{
+        height:0.813rem;
+        //min-height: 1.7rem;  
+        //max-height: 1.7rem;
+        width: 0.688rem;
+        margin-top: 0.188rem;
+        margin-bottom: 0.58rem;
+        //border-radius: 90%;
+        padding:0.9rem 0.7rem 0.8rem 0.7rem;
+        border:solid brown;
       }
-      #nav-twitter-logo:hover{
+      #nav-twitter-logo-item:hover{
         border-radius: 50%;
         background-color: rgba($color: #88bEFF, $alpha:0.2);
         
       }
+
+      #nav-twitter-logo-icon{
+        margin-top: 0.625rem;
+        height:1.88rem;
+        width:1.88rem;
+      }
       .nav-list-icons{
         //border:solid blue;
         //margin:0 0 0 0.8rem;
-        width: 1.85rem;
-        height:1.7rem;
+        width: 1.65rem;
+        //height:2rem;
         //align-self: center;
       }
       ul{

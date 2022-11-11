@@ -12,7 +12,7 @@ section,div,p,img,ul,ol,li{
   /*overflow-y: hidden;*/
   background-color: white;
   align-items: center;
-  font-size: calc(10px + 2vmin);
+  //font-size: calc(10px + 2vmin);
   color: black;
   section{
     height:100%;
@@ -22,28 +22,30 @@ section,div,p,img,ul,ol,li{
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
-    border-right:0.05rem solid rgba(220,220,220,0.3);
-    flex:0 0 29.2%;
+    
+    flex:0 0 31rem;
     font-family: 'Ubuntu', sans-serif;
     font-size:1.25rem;
+    //width: 495px;
     nav{
       //border:solid green;
       display: flex;
       flex-direction: column;
       align-items: start;
-      width: 47%; 
+      width: 17.2rem; 
       max-width: 100%;
-      height:60%;
-      max-height: 100vh;
+      height:38.25rem;
+      max-height:38.25rem;
       text-decoration: none;
 
       .nav-list-items{
         display: flex;
         align-items: center;
         margin-left:0.75rem;
-        margin-bottom: 0.55rem;
-        /*height: 1.48rem;
-        min-height: 1.48rem;  
+        //margin-bottom: 0.55rem;
+        height: 3.125rem;
+        width:9.563rem;
+        /*min-height: 1.48rem;  
         max-height: 1.48rem;*/
         padding: 0.8rem 1.5rem 0.8rem 0.75rem;
         border-radius: 2rem;
@@ -177,7 +179,7 @@ section,div,p,img,ul,ol,li{
   
     flex:0 0 32.2%;
     overflow-y: scroll;
-    
+    border-right: 0.01rem solid rgba(220, 220, 220, 0.3);
 
     #timeline-div{
       

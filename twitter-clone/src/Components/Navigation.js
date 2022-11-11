@@ -85,7 +85,7 @@ export default function Navigation(props){
                 More
               </div>
             </li></a>
-          <a href="#"><button type="click" className="tweet-btn" /*onClick={()=>setLi1("Casa")}*/>Tweet</button></a>
+          <a href="#"><button type="click" className="tweet-btn" >Tweet</button></a>
         </ul>
       </nav>
     )

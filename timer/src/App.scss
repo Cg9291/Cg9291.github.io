@@ -1,0 +1,319 @@
+/*{
+  -display/layout
+  -position
+  -margin
+  -border
+  -dimensions
+  -padding
+  -background-colors
+  -typography
+  -color
+}*/
+
+.App {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  //border:solid red;
+
+  background-color: yellow;
+  text-align: center;
+  color: white;
+
+  #container {
+    display: grid;
+    grid-template-areas:
+      ". circle ."
+      //". circle ."
+      "session circle break";
+    grid-template-columns: 20% 1fr 20%;
+    //grid-template-rows: auto ;
+
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+
+    background-color: rgb(0, 50, 75);
+  }
+
+  .labels {
+    grid-area: label;
+    margin-bottom: 15px;
+
+    //border:solid red;
+
+    font-size: 150%;
+  }
+
+  .fa-pause,
+  .fa-play {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .settings-buttons {
+    margin: 0;
+    align-self: center;
+
+    //width: 100%;
+    flex-basis: 20%;
+    height: max-content;
+    aspect-ratio: 1 / 1;
+
+    background-color: rgb(96, 132, 161);
+  }
+
+  .fa-arrow {
+    color: rgb(96, 132, 161);
+  }
+
+  .start-refresh-buttons {
+    margin: 0;
+    //min-width: 30%;
+    height: max-content;
+    aspect-ratio: 1 / 1;
+    //border: solid green;
+    padding: 0;
+    background-color: rgb(0, 50, 75);
+  }
+
+  .time-modifiers {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: 30% 1fr 30%;
+    grid-template-areas:
+      ". label ."
+      "increment value decrement";*/
+
+    margin: auto;
+
+    // border: solid salmon;
+
+    width: 100%;
+    min-width: 100%;
+
+    padding: none;
+  }
+
+  .increment-buttons {
+    grid-area: increment;
+  }
+
+  .length-values {
+    grid-area: value;
+    align-self: center;
+
+    // border: dotted red;
+
+    flex-basis: 15%;
+
+    padding: 0;
+
+    font-size: 2vw;
+  }
+
+  .decrement-buttons {
+    grid-area: decrement;
+  }
+
+  .btn-row {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 3.2%;
+
+    //border: solid black;
+  }
+
+  #timed-buttons {
+    display: "flex";
+    flex-direction: row;
+    justify-content: "space-evenly";
+
+    right: 5%;
+
+    border: solid yellow;
+  }
+
+  #start-pause-refresh-buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+
+    bottom: -12%;
+
+    //border: solid black;
+
+    min-width: 45%;
+    padding: 0;
+  }
+
+  #dynamic-timer-circle-svg {
+    position: absolute;
+    width: 50vw;
+  }
+
+
+
+  #circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    grid-area: circle;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    //border: 2px solid;
+    border-radius: 50%;
+
+    width: 50vw;
+    aspect-ratio: 1 / 1;
+
+    padding: none;
+
+    font-size: 2vw;
+  }
+
+  #session {
+    grid-area: session;
+
+    /*border: solid salmon;
+
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;*/
+  }
+
+  #timer-label {
+    align-self: flex-start;
+    margin-left: 20.5%;
+
+    margin-bottom: -2%;
+
+    //border: solid wheat;
+
+    font-size: 2.5vw;
+    font-weight: 100;
+  }
+
+  #time-left {
+    //  border:solid yellow;
+
+    padding: 0;
+
+    font-size: 13vw;
+    line-height: 85%;
+  }
+
+  #break {
+    grid-area: break;
+
+    /*border: solid salmon;
+
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;*/
+  }
+
+  button {
+    margin: auto;
+
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 1px 1px 5px 1px white, -1px -1px 5px, white, -1px 1px 5px white,
+      1px -1px 5px white;
+
+    //background-color: darkblue;
+
+    color: rgb(255, 255, 255);
+  }
+
+  #circle-path {
+    stroke-width: 10px;
+    fill: none;
+    //stroke: green;
+    stroke-linecap: round;
+    transform: rotate(95deg);
+    transition: 1s linear all;
+    //transform-origin: center;
+  }
+
+  // .................MEDIA QUERIES..............................
+
+  @media screen and (max-width: 576px) {
+
+    // for mobile phones
+    #container {
+      grid-template-areas:
+        "circle"
+        // "circle"
+        "session"
+        "break";
+      grid-template-columns: 1fr;
+    }
+
+        #dynamic-timer-circle-svg {
+          
+          width: 90vw;
+        }
+
+    #circle {
+      margin-top: 10%;
+
+      width: 90vw;
+      aspect-ratio: 1 / 1;
+
+      font-size: 3.5vw;
+
+      #timer-label {
+        margin-left: 15.5%;
+
+        font-size: 4vw;
+      }
+
+      #time-left {
+        padding: 0;
+
+        font-size: 27.5vw;
+        line-height: 85%;
+      }
+    }
+
+    #session {
+      margin-top: 0;
+      border: solid grey;
+    }
+
+    #break {
+      margin-top: 0;
+      border: solid grey;
+    }
+
+    #start-pause-refresh-buttons {
+      min-width: 50%;
+      max-width: 50%;
+    }
+
+    .length-values {
+      font-size: 10vw;
+      align-self: center;
+    }
+
+    .settings-buttons {
+      flex-basis: 17%;
+    }
+  }
+}
